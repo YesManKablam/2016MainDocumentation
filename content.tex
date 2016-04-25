@@ -7,19 +7,19 @@
 \paragraph{Abstract}
 The purpose of this project is to investigate the possibility of creating an Augmented Reality application for use in a local historical site. This investigation was completed by researching currently available augmented reality toolsets, selecting the most appropriate solution, and creating a prototype application using that toolset. The application will show the historical site as it once was when it was standing several hundred years ago.
 
-By pointing a smartphone’s camera at certain predefined target points, users of the application will be able to see a 3D model of the old building generated in real time. Users will then able to walk around the the site and the augmented reality engine will be able to track the user’s location and update where they are and what they can see. The application can also provide text overlays of information about the historical site. At one location of the site, the user can get an aerial view of the old site as it once stood with a view inside the building.
+By pointing a smartphone’s camera at certain predefined target points, users of the application will be able to see a 3D model of the old building generated in real time. Users will then able to walk around the the site and the augmented reality engine will be able to track the user’s location and update where they are and what they can see. The application can also provide text overlays of information about the historical site. At one location of the site, the user can get an aerial view of the old site as it once stood with a view inside the building. \cite{latexcompanion}
 
-By creating this application, we aim to provide a more enriching learning experience and hope to create an attraction to the site itself.
+By creating this application, we aim to provide a more enriching learning experience and hope to create an attraction to the site itself. \cite{kantra}
 \paragraph{Authors}
 John Conor Kenny
 Eoghan Moylan
 \chapter{Introduction}
-Augmented reality is the fusion of the real world and computer based imagery. According to Milgram, an interface can be defined by the level of reality the user experiences, and, that a spectrum exists with viruality and reality being the extreme cases (Milgram et al. 1994).
-In the middle of this spectrum lies augmented reality. Augmented reality systems are being planned in many sectors of modern industries. Liu describes augmented reality systems being used to assist in the completion of a variety of goals such as displaying instructions to workers using HMDs (Head Mounted Displays) for complex tasks such as assembly or maintenance (Liu et al. 2012).
+Augmented reality is the fusion of the real world and computer based imagery. According to Milgram, an interface can be defined by the level of reality the user experiences, and, that a spectrum exists with viruality and reality being the extreme cases \cite{SPIE}.
+In the middle of this spectrum lies augmented reality. Augmented reality systems are being planned in many sectors of modern industries. Liu describes augmented reality systems being used to assist in the completion of a variety of goals such as displaying instructions to workers using HMDs (Head Mounted Displays) for complex tasks such as assembly or maintenance \cite{SIGCHI}.
 This project aims to create an augmented reality application for the historical site, The Hall Of The Red Earl.
-The Hall Of The Red Earl is a 13th century building linked to the founding of Galway. “It was Galway’s first municipal building and was used to collect taxes, dispense justice and to host banquets” (Dúchas Na Gaillmhe, 2016). The application was designed to allow users to envision the hall as it stood during the reign of the Red Earl.
+The Hall Of The Red Earl is a 13th century building linked to the founding of Galway. “It was Galway’s first municipal building and was used to collect taxes, dispense justice and to host banquets” \cite{dng}. The application was designed to allow users to envision the hall as it stood during the reign of the Red Earl.
 The client requested that an augmented reality app be designed and built for the hall, though no specifics in terms of platforms, technologies or methods had been specified. This resulted in a great deal of research being done on both the site and augmented reality itself. The client had, however, suggested that the app adhere to similar aesthetic to a 3D interactive map of medieval Galway that was on display in the Galway City Museum. The client had requested the app be built in order to attract more visiters to the site as the ruins are not situated on a popular street and as a result often get over looked. The clients had hoped that with the implemenation of an augmented reality system tourists and archaeologists would gain an interest in the site.
-Ishii describes a gap between reality and cyberspace that augmented reality systems are trying to bridge (Ishii et al. 1997). The application was designed around this principle, to bridge the divide between the 13th century ruin and the computer generated imagery of the building. Augmented reality systems allow for an experience as immersive, if not more immersive, than their virtual reality counter parts, and, as a result, augmented reality systems are often acclaimed by archaeologists who pursue a phenomenological approach to archaeology. Phenomenology is a psychology term that, when paired with archaeology, refers to the method of thought that requires the archaeologist to view the site/situation as though they were present at the time. Using augmented reality allows for a much more tangible experience for those studying archaeological sites through a phenomenological mindset. Tilley (2010) discusses the role of phenomenology in interpreting archaeology.
+Ishii describes a gap between reality and cyberspace that augmented reality systems are trying to bridge \cite{tangibleBits}. The application was designed around this principle, to bridge the divide between the 13th century ruin and the computer generated imagery of the building. Augmented reality systems allow for an experience as immersive, if not more immersive, than their virtual reality counter parts, and, as a result, augmented reality systems are often acclaimed by archaeologists who pursue a phenomenological approach to archaeology. Phenomenology is a psychology term that, when paired with archaeology, refers to the method of thought that requires the archaeologist to view the site/situation as though they were present at the time. Using augmented reality allows for a much more tangible experience for those studying archaeological sites through a phenomenological mindset. Tilley (2010) discusses the role of phenomenology in interpreting archaeology.
 
 The objectives of the project were to research augmented realty APIs and systems that were relevant to the project, to research the Hall Of The Red Earl in order ensure that the application was historiacally accurate and, ultimately, to develop an augmented reality application that would allow users to envision the 13th century ruins as though they were still standing. 
 \chapter{Context}
@@ -27,7 +27,7 @@ The objectives of the project were to research augmented realty APIs and systems
 \chapter{Methodology}
 At the very beginning of this project, we decided upon following the Agile Methodology of software development. Agile promotes adaptive planning, evolutionary development, early delivery, continuous improvement and encourages a rapid and flexible response to change. Since cutting edge technology was worked on during the course of this project, being able to change and adapt was essential. This project also involved a client. Since Agile encourages a high level of engagement with project stakeholders, the client was kept informed and shown working prototypes all the way through development.
 
-Since this project consisted of two people working together, version control was very important. When working with cutting edge technologies, being able to backtrack and revert to a previous version is essential. For that reason, Git was selected as the source code management system. This also meant that the Git repositories could all be kept on GitHub, which is an online sharing website for Git repositories. However, the tools we were using caused some issues to arise. Unity can at times have issues when used with Git, especially if an incorrect “.gitignore” file is used. Vuforia also presented some issues with Git compatibility. When combined, Unity would crash whenever the Vuforia camera was opened and inspected after it had been passed through Git. In order to get around this, codebases were kept separate from each other until they were needed to be combined at the very end of development. A benefit of using the Unity game engine is that any scripts or game objects created are easily exportable to be used in another project. This means that while the codebases were kept apart, assets and code can be freely swapped between said codebases relatively easily without too much difficulty.
+Since this project consisted of two people working together, version control was very important. When working with cutting edge technologies, being able to backtrack and revert to a previous version is essential. For that reason, Git was selected as the source code management system. This also meant that the Git repositories could all be kept on GitHub, which is an online sharing website for Git repositories.
 
 In order to select suitable technologies for use in this project, they needed to meet a specific set of criteria. They needed to be stable and be able to target a wide range of platforms. Since Augmented Reality frameworks are still cutting edge, any engine that is needed to to be used in order to work with the framework would either need to be easy to understand, or something that we both had experience in. For these reasons we selected the Qualcomm Vuforia framework and the Unity game engine. Qualcomm Vuforia is a stable framework that is compatible with Android, iOS and Unity. Unity is an engine that we both are quite experienced in, and it uses C\# as it’s language, which we are also quite experienced in. This decision was made during the research phase of the project. As a result it was not known what platforms the app would be deployed on. Therefore, it was in the best interest of the project that the technologies selected be cross-platform compatible. After a discussion with the client, at a later date, this decision was reinforced as, although the initial and primary build was to be Android, an iOS version of the app had not not been entirely ruled out. Android was selected as the initial and primary build due to it’s large market share and the budgetary concerns of the client. As of the time of writing, Android holds roughly a  74\% market share of all smartphone operation systems in Europe. [1] Targeting for Android also allowed for testing on a wide arrange of devices, since any device can enable developer mode. The version of Android that was targeted was Gingerbread, Android 2.3. The reason for this is the adoption rate for Android updates are not the highest. The bellow graph from statistic.com [2] shows a breakdown of which Android versions are the most used. 
 
@@ -124,6 +124,72 @@ Another section of the UI are the facts about the site which appear over the var
 	\caption{A simple caption \label{overflow}}
 \end{figure}
 
+\section{HIDE}
+There is an instance of the Hide class in the AltTrackerHandler. The method invisible or the method visible are called in the OnTrackingFound()/OnTrackingLost() methods. This Hide class instance is attached to a gameobject with the tag “Building”. This gameobject has several child objects attached to it with an identical tag. Originally the Hide class would then deactivate the renderer of all of the gameobjects with tag “Building”.  However, this proved to cause issues with various versions of Unity and Vufoira. Instead the script was altered to deactivate the parent object, and, as a result, all of it's child objects. This script was developed to prevent models being loaded in when no image target was detected and to load models out of memory when the AltTrackerHandler called the OnTrackingLost() method.
+
+\section{BEGIN EXPERIENCE}
+The BeginExperience script is attached to the camera in the Unity scene. The camera's culling mask is set to not include object with the tag “hall”. This ensures that the model does not appear before the image target is detected. The script accesses the global variable “begun” once per frame. If the variable is set to 1, then the BeginExperience script will add the model of the Hall to the culling mask. This ensures that the camera will show the model. This variable is set to 1 in the DefaultTrackerHandler method OnTrackingFound(). The BeginExperience script also allows for gameobjects to be activated when a target is detected. This was initially used to load in the UI after the image target was detected but was later removed due to poor user experience. 
+
+\begin{lstlisting}
+private void setUpBegining(){
+   cam.cullingMask |= 1 << LayerMask.NameToLayer("Hall");
+   toLoad.SetActive(true);
+}
+\end{lstlisting}
+
+\section{ALT TRACKERAHNDLER/DEFAULTTRACKERHANDLER}
+Both of these scripts are very similar and are based off of the initial DefaultTrackerHandler class supplied by Vuforia. The classes are handlers that implement the ITrackableEventHandler interface. The classes have an instance of the TrackableBehaviour class that determines whether a trackable event has occured. The Start() methods of these classes are called when the class is first triggered. In this method the trackable event is registered if it has occured. The two key methods in these classes are the OnTrackingFound() method and the onTrackingLost() method. These methods are called when when trackable event is detected, e.g an image target is in view of the camera, an trackable object is in view of the camera etc. The AltTrackerHandler is used to trigger the Hide script while the DefaultTrackerHandler will set the “begun” variable. Both of these scripts will also enable/disable the colliders and renderers of the children attached to the script. In this project that feature is not implemented.
+
+\begin{lstlisting}
+void Start(){
+   mTrackableBehaviour = GetComponent<TrackableBehaviour>();
+   if(mTrackableBehaviour){
+      mTrackableBehaviour.RegisterTrackableEventHandler(this);
+   }
+}
+
+private void OnTrackingFound(){
+   if(hide != null){
+      hide.GetComponent<Hide>().visible();
+   }
+   ...
+}
+\end{lstlisting}
+
+\section{VIDEOTEXTURERENDERER \& VideoBackgroundBehaviour \& BackgroundPlaneBehaviour}
+BackgroundPlaneBehaviour class creates a mesh plane which is attached to the camera. The plane is then painted with a texture created by the VideoTextureRenderer. The VideoTextureRenderer creates a texture comprised of the feed taken from the devices camera. The VideoBackgroundBehviour handles the native video background rendering and needs to be attached to a camera object.
+In the space between the background video plane and the camera is where our models are placed. This creates the illusion of the models appearing as a part of the camera's image, making them seem part of real life.
+
+\section{KeepAlive \& DataBaseLoadBehaviour \& VuforiaBehaviour}
+The VuforiaBehaviour script determine the platform the application is running on and creates a singleton “getter” to the VuriaBehaviour object. It then adds the ComponentFactory which creates all of the necessary objects needed for Vuforia to function.   
+The KeepAlive behaviour allows for Vuforia objects to be loaded across various scenes. This reduces the amount of loading needed when switching between scenes. It also makes it possible to share datasets and targets (of different types) across multiple scenes. However, in order to function it must be attached to gameobject that also has the VuforiaBehaviour script attached to it. The DatabaseLoadBehaviour determines what datasets are to be loaded in the scene and whether or not they are to be activated. The script allows for multiple datasets to be loaded and activated at a time. By default the datasets (which are stored in XML and DAT files) are located in the StreamingAssets folder.
+
+\begin{lstlisting}
+protected void Awake(){
+   IUnityPlayer unityPlayer = new NullUnityPlayer();
+   
+   // instantiate the correct UnityPlayer for the current platform
+   if (Application.platform == RuntimePlatform.Android){
+      unityPlayer = new AndroidUnityPlayer();
+   }
+   else if (Application.platform == RuntimePlatform.IPhonePlayer){
+      ...
+   }
+   
+   gameObject.AddComponent<ComponentFactoryStarterBehaviour>();
+}
+   
+public static VuforiaBehaviour Instance{
+   get
+   {
+      if (mVuforiaBehaviour == null){
+         mVuforiaBehaviour = FindObjectOfType<VuforiaBehaviour>();
+      }
+      return mVuforiaBehaviour;
+   }
+}
+\end{lstlisting}
+
 \chapter{System Evaluation}
 \section{Testing}
 In order to ensure that the application performed as intended, testing was done at regular intervals for the various components. These intervals varied depending on the component.
@@ -150,6 +216,8 @@ As discussed earlier these image targets later became the starting points of the
 The placement of the image targets was in itself an issue that arose in the final days of the project. While recording a video of the final prototype application, it became very apparent that the correct placement of these targets would deciding factor as to whether the application would function as intended or not. As Vuforia sets the world centre of the Unity scene as the first target detected, it was crucial that the starting point image targets be placed in the correct positions. On the day of recording the video wind and rain had been present. As the targets being used were temporary they were not on flat surfaces and were not protected from the rain. This meant that placing of the targets had to be done as quickly as possible. Though a rough estimation had been done in the Unity engine as to areas of the ruins that targets would be placed, it was very difficult to match these areas in the actual ruins. This resulted in many trial and error attempts to get the model lined up perfectly. Upon the release of the final version, it will be critical to success of the application that these targets are placed in the correct position.
 
 The Vuforia engine itself has created quite a few problem through the project. Although most had been dealt with, one reoccurring issue that had to be worked around was Vuforia not updating the current target. Though this was a rare occurrence, Vuforia has an ongoing issue whereby it does not update the current image target, resulting the previous target being registered as the current target. This causes the model to load in incorrectly. A number of steps to combat this were taken such as clearing Vuforia's image cache each time a new target was discovered. However, these steps resulted in more issues further and, eventually, the only work around available was to add a refresh button which would reload the scene should the issue occur.
+
+Version control and code sharing also turned out to be quite a huge challenge during this project. Unity can at times have issues when used with Git, especially if an incorrect “.gitignore” file is used. Vuforia also presented some issues with Git compatibility. When combined, Unity would crash whenever the Vuforia camera was opened and inspected after it had been passed through Git. In order to get around this, codebases were kept separate from each other until they were needed to be combined at the very end of development. A benefit of using the Unity game engine is that any scripts or game objects created are easily exportable to be used in another project. This means that while the codebases were kept apart, assets and code can be freely swapped between said codebases relatively easily without too much difficulty.
 
 \chapter{Conclusion}
 The intention of this project was to create an augmented reality application for the Hall Of The Red Earl which would allow users to envision the ruins as they were in the 13th century. This was achieved by using various cutting edge and established technologies such as Vuforia and Unity.
