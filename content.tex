@@ -1,5 +1,4 @@
 %!TEX root = project.tex
-
 \graphicspath{ {/Home/Users/TheShockMaster/Desktop} }
 
 \chapter*{About this project}
@@ -106,6 +105,7 @@ When all targets are finished generating, the Target Database can be downloaded 
 	\caption{Here is a section of the database of target images. \label{overflow}}
 \end{figure}
 
+\clearpage
 
 \section{Unity}
 The Unity game engine was selected for this project for several reasons. It is cross-platform, well documented, active community and forum, and is compatible with Vuforia. We are both quite experienced in the Unity engine, having used in the past, which allowed us to focus on learning how Vuforia works and how to adapt it to do what we need. Unity supports three languages; C\#, UnityScript (Previously Javascript for Unity) and Boo. As of Unity 5, the option to select the Boo language has been removed from the game editor itself, but the scripts are still compatible. 
@@ -270,6 +270,13 @@ As discussed earlier these image targets later became the starting points of the
 \end{figure}
 The placement of the image targets was in itself an issue that arose in the final days of the project. While recording a video of the final prototype application, it became very apparent that the correct placement of these targets would deciding factor as to whether the application would function as intended or not. As Vuforia sets the world centre of the Unity scene as the first target detected, it was crucial that the starting point image targets be placed in the correct positions. On the day of recording the video wind and rain had been present. As the targets being used were temporary they were not on flat surfaces and were not protected from the rain. This meant that placing of the targets had to be done as quickly as possible. Though a rough estimation had been done in the Unity engine as to areas of the ruins that targets would be placed, it was very difficult to match these areas in the actual ruins. This resulted in many trial and error attempts to get the model lined up perfectly. Upon the release of the final version, it will be critical to success of the application that these targets are placed in the correct position.
 
+\begin{figure}[ht!]
+	\centering
+	\includegraphics[width=90mm]{sitemap}
+	\caption{Here is the map of the site with suggested locations for the placement of the image targets.
+		\label{overflow}}
+\end{figure}
+
 The Vuforia engine itself has created quite a few problem through the project. Although most had been dealt with, one reoccurring issue that had to be worked around was Vuforia not updating the current target. Though this was a rare occurrence, Vuforia has an ongoing issue whereby it does not update the current image target, resulting the previous target being registered as the current target. This causes the model to load in incorrectly. A number of steps to combat this were taken such as clearing Vuforia's image cache each time a new target was discovered. However, these steps resulted in more issues further and, eventually, the only work around available was to add a refresh button which would reload the scene should the issue occur.
 
 Version control and code sharing also turned out to be quite a huge challenge during this project. Unity can at times have issues when used with Git, especially if an incorrect “.gitignore” file is used. Vuforia also presented some issues with Git compatibility. When combined, Unity would crash whenever the Vuforia camera was opened and inspected after it had been passed through Git. In order to get around this, codebases were kept separate from each other until they were needed to be combined at the very end of development. A benefit of using the Unity game engine is that any scripts or game objects created are easily exportable to be used in another project. This means that while the codebases were kept apart, assets and code can be freely swapped between said codebases relatively easily without too much difficulty.
@@ -289,3 +296,12 @@ The UI was designed specifically for the application and each icon was drawn in 
 Through regular commits to the GitHub and iterations of the application, the agile methodology was implemented whenever possible. This can also be seen in the iterative testing and regular meetings with both the client and the project team. Testing the application was a difficult task as the application was designed to only work in one location properly. This was overcome through various testing methods that tested various aspects of the application without the need to be present at the site. This means most of the application was subject to regular testing and aspects that had less frequent testing did not require the same level of attention.
 
 In conclusion, though there were difficulties and issues that the project and team were subject to throughout development, the final application meets the clients requirements, uses cutting edge technologies and generates an immersive, stable and interesting augmented reality experience.
+
+\begin{appendices}
+	\chapter{Links}
+https://github.com/EoghanMoylan/AugmentedRealityApp \\
+
+https://github.com/YesManKablam/2016MainDocumentation \\
+
+https://www.youtube.com/watch?v=nIjluJcAqPw\\
+\end{appendices}
