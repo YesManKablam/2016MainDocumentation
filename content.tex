@@ -17,10 +17,10 @@ Augmented reality is the fusion of the real world and computer based imagery. Ac
 In the middle of this spectrum lies augmented reality. Augmented reality systems are being planned in many sectors of modern industries. Liu describes augmented reality systems being used to assist in the completion of a variety of goals such as displaying instructions to workers using HMDs (Head Mounted Displays) for complex tasks such as assembly or maintenance \cite{SIGCHI}.
 This project aims to create an augmented reality application for the historical site, The Hall Of The Red Earl.
 The Hall Of The Red Earl is a 13th century building linked to the founding of Galway. “It was Galway’s first municipal building and was used to collect taxes, dispense justice and to host banquets” \cite{dng}. The application was designed to allow users to envision the hall as it stood during the reign of the Red Earl.
-The client requested that an augmented reality app be designed and built for the hall, though no specifics in terms of platforms, technologies or methods had been specified. This resulted in a great deal of research being done on both the site and augmented reality itself. The client had, however, suggested that the app adhere to similar aesthetic to a 3D interactive map of medieval Galway that was on display in the Galway City Museum. The client had requested the app be built in order to attract more visiters to the site as the ruins are not situated on a popular street and as a result often get over looked. The clients had hoped that with the implemenation of an augmented reality system tourists and archaeologists would gain an interest in the site.
+The client requested that an augmented reality app be designed and built for the hall, though no specifics in terms of platforms, technologies or methods had been specified. This resulted in a great deal of research being done on both the site and augmented reality itself. The client had, however, suggested that the app adhere to similar aesthetic to a 3D interactive map of medieval Galway that was on display in the Galway City Museum. The client had requested the app be built in order to attract more visitors to the site as the ruins are not situated on a popular street and as a result often get over looked. The clients had hoped that with the implementation of an augmented reality system tourists and archaeologists would gain an interest in the site.
 Ishii describes a gap between reality and cyberspace that augmented reality systems are trying to bridge \cite{tangibleBits}. The application was designed around this principle, to bridge the divide between the 13th century ruin and the computer generated imagery of the building. Augmented reality systems allow for an experience as immersive, if not more immersive, than their virtual reality counter parts, and, as a result, augmented reality systems are often acclaimed by archaeologists who pursue a phenomenological approach to archaeology. Phenomenology is a psychology term that, when paired with archaeology, refers to the method of thought that requires the archaeologist to view the site/situation as though they were present at the time. Using augmented reality allows for a much more tangible experience for those studying archaeological sites through a phenomenological mindset.\cite{tilley} discusses the role of phenomenology in interpreting archaeology.
 
-The objectives of the project were to research augmented realty APIs and systems that were relevant to the project, to research the Hall Of The Red Earl in order ensure that the application was historiacally accurate and, ultimately, to develop an augmented reality application that would allow users to envision the 13th century ruins as though they were still standing. 
+The objectives of the project were to research augmented realty APIs and systems that were relevant to the project, to research the Hall Of The Red Earl in order ensure that the application was historically accurate and, ultimately, to develop an augmented reality application that would allow users to envision the 13th century ruins as though they were still standing. 
 \chapter{Context}
 \section{Objectives}
 The objectives of the project was to create an augmented reality experience for smart phones and tablets that would allow users to visualise the ruins of The Hall of The Red Earl as they were when they were intact.
@@ -97,7 +97,7 @@ The Target Manager takes in any of these target types and then analyses them for
 
 Since the Target Manager recognises text and handles targets with many corners quite well, the target points that were created for this project contained both written instruction on what each point is for and a simple border. 
 
-When all targets are finished generating, the Target Database can be downloaded and imported into another engine. The database gives you access to all of the finished image targets, which can be freely moved around within the engine. When the smartphone camera then sees one of these targets, it will move the in-engine camera to point at the recognised image target. This means that if you move the smartphone camera after seeing an image target, you are intact moving the engine’s camera. This is how Vuforia is able to show you where the 3D models exist in relation to your position.
+When all targets are finished generating, the Target Database can be downloaded and imported into another engine. The database gives you access to all of the finished image targets, which can be freely moved around within the engine. When the smartphone camera then sees one of these targets, it will move the in-engine camera to point at the recognised image target. This means that if you move the smartphone camera after seeing an image target, you are in fact moving the engine’s camera. This is how Vuforia is able to show you where the 3D models exist in relation to your position.
 
 \begin{figure}[ht!]
 	\centering
@@ -139,8 +139,8 @@ The Extended Tracking feature was exactly what was needed in order to map the 3D
 
 
 \section{User Interface}
-Van Dam describes interfaces as an “intermediary between the users intent and the execution of that intent”  and with that principle in mind they should be treated as a necessity and not a feature (Van Dam 1997). Augmented reality systems often require alternative user interface designs to standard desktop GUIs (Graphic User Interfaces), known as W.I.M.Ps (Windows, Icons, Menus, Pointers), as they can “constrain the user due to limited screen space and interaction bandwidth”(Lee et al. 2013). This project was designed with the intention of keeping the UI (user Interface) as unobtrusive and immersive as possible. As a result all of the assets used in the UI were created specifically for this project. The UI in this project consists of a number of buttons which are placed along the top of the screen. The designs were based on the UI used by other popular apps and were purposefully kept minimalistic in order to avoid confusion as to there purpose, as well as in order to keep the user immersed in the augmented reality of the app.
-Bai claims that the use of mobile devices in collaboration with augmented reality systems results in issues with stability, as the user struggles to hold the device wit hone hand and interact with the interface with the other (Bai et al. 2012). Lee mirrors this concern and states that frequent shaking of the device results in erroneous operations (Lee et al. 2009).
+Van Dam describes interfaces as an “intermediary between the users intent and the execution of that intent”  and with that principle in mind they should be treated as a necessity and not a feature\cite{avd}. Augmented reality systems often require alternative user interface designs to standard desktop GUIs (Graphic User Interfaces), known as W.I.M.Ps (Windows, Icons, Menus, Pointers), as they can “constrain the user due to limited screen space and interaction bandwidth”\cite{spacetop}. This project was designed with the intention of keeping the UI (user Interface) as unobtrusive and immersive as possible. As a result all of the assets used in the UI were created specifically for this project. The UI in this project consists of a number of buttons which are placed along the top of the screen. The designs were based on the UI used by other popular apps and were purposefully kept minimalistic in order to avoid confusion as to there purpose, as well as in order to keep the user immersed in the augmented reality of the app.
+Bai claims that the use of mobile devices in collaboration with augmented reality systems results in issues with stability, as the user struggles to hold the device wit hone hand and interact with the interface with the other\cite{interactiveMethods}. Lee mirrors this concern and states that frequent shaking of the device results in erroneous operations\cite{freezesetgo}.
 
 \begin{figure}[ht!]
 	\centering
@@ -246,6 +246,20 @@ Performance of the application varied to a degree depending on the phone or tabl
 Initially the same virtual “AR Camera” was used in multiple scenes in the Unity engine. Vuforia allows for this via a script called “Keep Alive Behaviour”. This script keeps the image target datasets and other objects loaded in memory. This resulted in a long loading screen at start-up, but a very quick transition between the various scenes. This approach was quickly abandoned after it became apparent that there was no intuitive means of placing the “AR Camera” within the scenes on loading in. It also resulted in a number of issues where scenes were not running properly, in some cases crashing, as the camera would not spawn in as well as resulting in models not loading in the correct position.
 It was then decided that a new camera instance be created in each scene which only loaded in datasets that were required in that scene. This resulted in slower transition times between scenes, but an overall more stable application.
 In order to reduce the memory required by the application all of the image targets were shot at a high resolution but converted to much lower quality image through Photoshop. Though the difference in image quality was not particularly noticeable to the average viewer, the size of these images were reduced from an average of 28-30 MB to 300-500 KB. 
+Performance testing was also carried out on the final build. Using a range of different Android devices, the time it took to load the application from the homescreen was recorded. The left column indicates the model of phone, while the right column is the result time in seconds.
+
+\begin{center}
+	\begin{tabular}{ |c|c|c| } 
+		\hline
+		HTC M8 & 04:73 \\ 
+		Motorola Moto G (2nd gen) & 06:39 \\
+		Motorola Moto G (1st gen) & 4:70 \\ 
+		Samsung Galaxy S7 Edge & 02:67 \\ 
+		Samsung Galaxy Tab S2   & 03:96 \\ 
+		Sony Xperia Z2 & 02:80 \\ 
+		\hline
+	\end{tabular}
+\end{center}
 
 \section{Issues and limitations}
 Throughout the development of the application a number of issues with both the technologies used and the design approach became apparent. Though these varied in severity, they were addressed and removed or at the very least reduced in scale and intensity.
@@ -298,10 +312,13 @@ Through regular commits to the GitHub and iterations of the application, the agi
 In conclusion, though there were difficulties and issues that the project and team were subject to throughout development, the final application meets the clients requirements, uses cutting edge technologies and generates an immersive, stable and interesting augmented reality experience.
 
 \begin{appendices}
-	\chapter{Links}
+\chapter{Links}
 https://github.com/EoghanMoylan/AugmentedRealityApp \\
+Source code.\\
 
 https://github.com/YesManKablam/2016MainDocumentation \\
+Documentation source.\\
 
 https://www.youtube.com/watch?v=nIjluJcAqPw\\
+Video demonstartion.\\
 \end{appendices}
